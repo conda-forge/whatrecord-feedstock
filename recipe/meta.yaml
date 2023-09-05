@@ -14,7 +14,7 @@ build:
   - whatrecord = whatrecord.bin.main:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -31,9 +31,6 @@ requirements:
   - jinja2
   - lark
   - python-graphviz <0.18
-  - __unix  # [unix]
-  - __win   # [win]
-  - mslex >=0.3.0  # [win]
 
 test:
   imports:
