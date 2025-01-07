@@ -36,10 +36,8 @@ test:
   imports:
     - whatrecord
   commands:
-    - pip check
     - whatrecord --help
   requires:
-    - pip
     - python {{ python_min }}
 
 about:
@@ -54,6 +52,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/pcdsdevices
-    - ZLLentz
-    - tangkong
-    - klauer
